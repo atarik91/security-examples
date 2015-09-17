@@ -1,0 +1,2 @@
+/subsystem=datasources/data-source=testDS:add(jndi-name=java:jboss/datasources/testDS,  enabled=true, use-java-context=true, driver-name=h2, connection-url="jdbc:h2:mem:test-security;INIT=RUNSCRIPT FROM '${jboss.home.dir}/create-user.sql'\;",user-name=sa, password=sa)
+
