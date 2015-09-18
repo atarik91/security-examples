@@ -19,7 +19,7 @@
       <dependency>
           <groupId>org.picketbox</groupId>
           <artifactId>picketbox</artifactId>
-          <version>4.9.3.Final</version>
+          <version>4.9.2.Final</version>
       </dependency>
       <dependency>
 		<groupId>org.jboss.logging</groupId>
