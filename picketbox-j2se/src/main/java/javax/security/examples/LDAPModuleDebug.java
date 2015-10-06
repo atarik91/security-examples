@@ -21,7 +21,7 @@ public class LDAPModuleDebug {
         
         try {
             PicketBoxConfiguration config = new PicketBoxConfiguration();
-            config.load(SampleMain.class.getClassLoader().getResourceAsStream("picketbox/authentication.conf"));
+            config.load(SampleMain.class.getClassLoader().getResourceAsStream("picketbox/authentication-debug.conf"));
             
             AuthenticationManager authManager = SecurityFactory.getAuthenticationManager(securityDomain); 
             
@@ -40,6 +40,10 @@ public class LDAPModuleDebug {
         } finally {
             SecurityFactory.release();
         }
+        
+//        Configuration config = Configuration.getConfiguration();
+//        
+//        System.out.println(config);
     }
 
 }
